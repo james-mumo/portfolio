@@ -3,22 +3,25 @@ import React from "react"
 const Projects = () => {
   const projects = [
     {
-      title: "TWINDER",
+      title: "MERNDASH",
       description:
-        "A live Geolocation app for finding tweets and twitter users around you.",
-      photo: "/src/assets/projects/img1.png",
+        "This is a simple admin dashboard built using the MERN stack (MongoDB, Express, React, Node.js) for managing and visualizing data. It features both dark and light themes, utilizing Material-UI tables, Nivo charts, and maps.",
+      photo:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262810/portfolioImages/merndash_zpxhxl.png",
     },
     {
-      title: "LIVENTS",
+      title: "TUBONGE",
       description:
-        "A video streaming app with live Geolocation, for streaming events.",
-      photo: "/src/assets/projects/img2.png",
+        "This Android application is developed as a final year project to address mental health concerns. The application provides a comprehensive set of features to support users in managing their mental well-being.",
+      photo:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262895/portfolioImages/collage_ij5elu.png",
     },
     {
-      title: "MOOVE",
+      title: "Rent Hub",
       description:
-        "Mobile app for booking instant pickup & dropoff accross major cities.",
-      photo: "/src/assets/projects/img3.png",
+        "A React Native app that helps users find rentals in various locations. It allows users to filter their search based on various parameters such as location, price range, and number of rooms with detailed information about each rental, including images, features, and amenities.",
+      photo:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262894/portfolioImages/renthub_hpacff.png",
     },
   ]
   return (
