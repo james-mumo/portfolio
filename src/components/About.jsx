@@ -5,12 +5,25 @@ import { personalInfo } from "../data/personalInfo"
 
 const About = () => {
   const skills = [
-    { name: "WEB DEVELOPMENT", image: "/src/assets/icons/web.png" },
-    { name: "UI & UX DESIGNING", image: "/src/assets/icons/designer.png" },
-    { name: "MOBILE DEVELOPMENT", image: "/src/assets/icons/android.png" },
+    {
+      name: "WEB DEVELOPMENT",
+      image:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262441/portfolioImages/web_xhay5k.png",
+    },
+    {
+      name: "UI & UX DESIGNING",
+      image:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262439/portfolioImages/designer_rbq0em.png",
+    },
+    {
+      name: "MOBILE DEVELOPMENT",
+      image:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262439/portfolioImages/android_oedjjp.png",
+    },
     {
       name: "FULLSTACK DEVELOPMENT",
-      image: "/src/assets/icons/comp.png",
+      image:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262439/portfolioImages/comp_s2wytl.png",
     },
   ]
   const tags = [
@@ -70,7 +83,7 @@ const About = () => {
       <span className="flex items-center">
         <hr className="border-t border-teal-400 mx-1 w-4" />
         <span className="text-primary text-1xl md:text-xl font-semibold">
-          Skills 
+          Skills
         </span>
         <hr className="border-t border-teal-400 mx-1 flex-grow" />
       </span>
