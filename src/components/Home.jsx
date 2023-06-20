@@ -1,6 +1,4 @@
 import React from "react"
-import Img from "../assets/Willie.png"
-import circle from "../assets/circle.png"
 import img2 from "../assets/j.png"
 import tailwind from "../assets/skills/tailwind.svg"
 import java from "../assets/skills/java.svg"
