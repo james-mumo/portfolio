@@ -8,6 +8,8 @@ import rreact from "../assets/skills/react.svg"
 import firebase from "../assets/skills/firebase.svg"
 import git from "../assets/skills/git.svg"
 import nextJS from "../assets/skills/nextJS.svg"
+import typescript from "../assets/skills/typescript.svg"
+import javascript from "../assets/skills/javascript.svg"
 import express from "../assets/skills/nextJS.svg"
 import mongoDB from "../assets/skills/mongoDB.svg"
 import Marquee from "react-fast-marquee"
@@ -148,16 +150,10 @@ const Home = () => {
             delay={0}
             gradientColor={[255, 255, 255]}>
             <MarqueeItem name="Java" img={java} />
-            <MarqueeItem
-              name="JavaScript"
-              img="../assets/skills/javascript.svg"
-            />
+            <MarqueeItem name="JavaScript" img={javascript} />
             <MarqueeItem name="React" img={rreact} />
             <MarqueeItem name="Firebase" img={firebase} />
-            <MarqueeItem
-              name="TypeScript"
-              img="../assets/skills/typescript.svg"
-            />
+            <MarqueeItem name="TypeScript" img={typescript} />
             <MarqueeItem name="NextJs" img={nextJS} />
             <MarqueeItem name="MongoDB" img={mongoDB} />
             <MarqueeItem name="TailWind" img={tailwind} />
