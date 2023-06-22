@@ -50,9 +50,9 @@ const Projects = () => {
     {
       title: "VUE ADMIN",
       description:
-        "A Vue Js Admin DashBoard For Making Visulaisations and Summary Information by use of Charts and .",
+        "A Vue Js Admin DashBoard For Making Visualisations and Summary Information by use of Charts and Graphs. The App also acts as an inventory for an Ecommerce Store. An Analytics as well as Mailing Functionalities are also provided.",
       photo:
-        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262894/portfolioImages/renthub_hpacff.png",
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1687423793/easybuy/vue_xikbrd.png",
       seeCode:"https://github.com/james-mumo/dash-vuejs/tree/main",
       visitApp:"httsps://vuejsdash.vercel.app"
     },
