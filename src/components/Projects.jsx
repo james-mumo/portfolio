@@ -39,13 +39,22 @@ const Projects = () => {
       visitApp:"https://raw.githubusercontent.com/james-mumo/tubonge-mental-app/main/tubonge.apk"
     },
     {
-      title: "Rent Hub",
+      title: "RENT HUB",
       description:
         "A React Native app that helps users find rentals in various locations. It allows users to filter their search based on various parameters such as location, price range, and number of rooms with detailed information about each rental, including images, features, and amenities.",
       photo:
         "https://res.cloudinary.com/jamesmumo/image/upload/v1687262894/portfolioImages/renthub_hpacff.png",
       seeCode:"https://github.com/james-mumo/rental-hub-rn",
       visitApp:"https://github.com/james-mumo/rental-hub-rn"
+    },
+    {
+      title: "VUE ADMIN",
+      description:
+        "A Vue Js Admin DashBoard For Making Visulaisations and Summary Information by use of Charts and .",
+      photo:
+        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262894/portfolioImages/renthub_hpacff.png",
+      seeCode:"https://github.com/james-mumo/dash-vuejs/tree/main",
+      visitApp:"httsps://vuejsdash.vercel.app"
     },
   ]
   return (
@@ -86,10 +95,12 @@ const Projects = () => {
                 <button className="btn transition-all duration-500 bg-primary py-2 px-5 rounded text-white hover:bg-white hover:text-primary">
                   View
                 </button>
-                  </a>
+                </a>
+                <a target="_blank" href={project.seeCode}>
                 <button className="btn border-2 border-emerald-600 py-1.5 px-3 rounded  ml-5 text-white ">
                   See Code
                 </button>
+                </a>
               </div>
             </div>
           )
