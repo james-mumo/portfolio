@@ -82,9 +82,11 @@ const Projects = () => {
               </h3>
               <p className=" text-white mt-1">{project.description}</p>
               <div className="mt-5 flex justify-center">
+                <a target="_blank" href={project.visitApp}>
                 <button className="btn transition-all duration-500 bg-primary py-2 px-5 rounded text-white hover:bg-white hover:text-primary">
                   View
                 </button>
+                  </a>
                 <button className="btn border-2 border-emerald-600 py-1.5 px-3 rounded  ml-5 text-white ">
                   See Code
                 </button>
