@@ -21,9 +21,9 @@ const Projects = () => {
       visitApp:"https://easybuy-mern.vercel.app/"
     },
     {
-      title: "CreditFit",
+      title: "CREDITFIT",
       description:
-        "This is a live selling e-commerce app built using the MERN stack (MongoDB, Express, React, Node.js). It features both functionalitite such that sellere can create live trading sessions and buyers can attend and view the events.",
+        "This is a live selling e-commerce app built using the MERN stack (MongoDB, Express, React, Node.js). It features both functionalitite that sellers can create live trading sessions and buyers can attend and view the events.",
       photo:
         "https://res.cloudinary.com/djv535hkn/image/upload/v1687420563/easybuy/creditfit_wuthjy.png",
       seeCode:"https://github.com/james-mumo/creditfit-react",
