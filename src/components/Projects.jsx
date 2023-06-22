@@ -8,6 +8,26 @@ const Projects = () => {
         "This is a simple admin dashboard built using the MERN stack (MongoDB, Express, React, Node.js) for managing and visualizing data. It features both dark and light themes, utilizing Material-UI tables, Nivo charts, and maps.",
       photo:
         "https://res.cloudinary.com/jamesmumo/image/upload/v1687262810/portfolioImages/merndash_zpxhxl.png",
+      seeCode:"https://github.com/james-mumo/mern-admin-dash",
+      visitApp:"https://mern-admin-dash.vercel.app/dashboard"
+    },
+    {
+      title: "ECOMMERCE",
+      description:
+        "This is a live selling e-commerce app built using the MERN stack (MongoDB, Express, React, Node.js). It features both functionalitite such that sellere can create live trading sessions and buyers can attend and view the events.",
+      photo:
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1687419984/easybuy/easyBuy_ochis1.png",
+      seeCode:"https://github.com/james-mumo/easybuy-mern-frontend",
+      visitApp:"https://easybuy-mern.vercel.app/"
+    },
+    {
+      title: "CreditFit",
+      description:
+        "This is a live selling e-commerce app built using the MERN stack (MongoDB, Express, React, Node.js). It features both functionalitite such that sellere can create live trading sessions and buyers can attend and view the events.",
+      photo:
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1687420563/easybuy/creditfit_wuthjy.png",
+      seeCode:"https://github.com/james-mumo/creditfit-react",
+      visitApp:"https:/creditfit.vercel.app/"
     },
     {
       title: "TUBONGE",
@@ -15,6 +35,8 @@ const Projects = () => {
         "This Android application is developed as a final year project to address mental health concerns. The application provides a comprehensive set of features to support users in managing their mental well-being.",
       photo:
         "https://res.cloudinary.com/jamesmumo/image/upload/v1687262895/portfolioImages/collage_ij5elu.png",
+      seeCode:"https://github.com/james-mumo/tubonge-mental-app",
+      visitApp:"https://raw.githubusercontent.com/james-mumo/tubonge-mental-app/main/tubonge.apk"
     },
     {
       title: "Rent Hub",
@@ -22,6 +44,8 @@ const Projects = () => {
         "A React Native app that helps users find rentals in various locations. It allows users to filter their search based on various parameters such as location, price range, and number of rooms with detailed information about each rental, including images, features, and amenities.",
       photo:
         "https://res.cloudinary.com/jamesmumo/image/upload/v1687262894/portfolioImages/renthub_hpacff.png",
+      seeCode:"https://github.com/james-mumo/rental-hub-rn",
+      visitApp:"https://github.com/james-mumo/rental-hub-rn"
     },
   ]
   return (
