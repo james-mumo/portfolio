@@ -18,7 +18,7 @@ const About = () => {
     {
       name: "MOBILE DEVELOPMENT",
       image:
-        "https://res.cloudinary.com/jamesmumo/image/upload/v1687262439/portfolioImages/android_oedjjp.png",
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1687424489/android_i81uwr.png",
     },
     {
       name: "FULLSTACK DEVELOPMENT",
