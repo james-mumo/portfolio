@@ -54,7 +54,7 @@ const Projects = () => {
       photo:
         "https://res.cloudinary.com/djv535hkn/image/upload/v1687423793/easybuy/vue_xikbrd.png",
       seeCode:"https://github.com/james-mumo/dash-vuejs/tree/main",
-      visitApp:"httsps://vuejsdash.vercel.app"
+      visitApp:"https://vuejsdash.vercel.app/"
     },
   ]
   return (
