@@ -1,45 +1,45 @@
-import React from "react"
-import img2 from "../assets/j.png"
-import tailwind from "../assets/skills/tailwind.svg"
-import java from "../assets/skills/java.svg"
-import rreact from "../assets/skills/react.svg"
-import firebase from "../assets/skills/firebase.svg"
-import git from "../assets/skills/git.svg"
-import nextJS from "../assets/skills/nextJS.svg"
-import typescript from "../assets/skills/typescript.svg"
-import javascript from "../assets/skills/javascript.svg"
-import express from "../assets/skills/nextJS.svg"
-import mongoDB from "../assets/skills/mongoDB.svg"
-import Marquee from "react-fast-marquee"
-import { personalInfo } from "../data/personalInfo"
-import { TypeAnimation } from "react-type-animation"
-import { motion } from "framer-motion"
-import { Link as RouterLink } from "react-router-dom"
-import { Link, ScrollLink } from "react-scroll"
+import React from "react";
+import img2 from "../assets/j.png";
+import tailwind from "../assets/skills/tailwind.svg";
+import java from "../assets/skills/java.svg";
+import rreact from "../assets/skills/react.svg";
+import firebase from "../assets/skills/firebase.svg";
+import git from "../assets/skills/git.svg";
+import nextJS from "../assets/skills/nextJS.svg";
+import typescript from "../assets/skills/typescript.svg";
+import javascript from "../assets/skills/javascript.svg";
+import express from "../assets/skills/nextJS.svg";
+import mongoDB from "../assets/skills/mongoDB.svg";
+import Marquee from "react-fast-marquee";
+import { personalInfo } from "../data/personalInfo";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import { Link as RouterLink } from "react-router-dom";
+import { Link, ScrollLink } from "react-scroll";
 
 const Home = () => {
-  const link = "about"
+  const link = "about";
   const MarqueeItem = ({ name, img }) => {
     return (
       <div className="flex border  border-teal-500 p-1 object-contain bg-[#01d29313] items-center px-3 mx-4 gap-4 h-10 rounded-md">
         <img
           src={img}
           alt=""
-          className=" w-10 object-contain flex justify-center items-center"
+          className="flex object-contain justify-center items-center w-10"
         />
         <span className="text-[#01d293]  font-semibold">{name}</span>
       </div>
-    )
-  }
+    );
+  };
   return (
-    <div className="md:px-10 px-7 my-8 md:h-screen bg-[##011627]" id="home">
+    <div className="md:px-10 px-7 my-7 md:h-screen bg-[##011627]" id="home">
       <div>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
+        <div className="flex flex-col justify-between items-center w-full md:flex-row">
           {/* image & content */}
           {/* text */}
           <div className="text-white">
-            <h1 className="opacity-70 mt-10 font-semibold text-3xl leading-none">
-              Hello👋🏾,I'm
+            <h1 className="mt-10 text-3xl font-semibold leading-none opacity-70">
+              Hello👋🏾, I'm
             </h1>
             {/*  */}
             {/*  */}
@@ -83,8 +83,9 @@ const Home = () => {
                             duration: 0.5,
                           },
                         }}
-                        className="flex "
-                        key={idx}>
+                        className="flex"
+                        key={idx}
+                      >
                         {letter}
                       </motion.h1>
                     )}
@@ -95,7 +96,7 @@ const Home = () => {
             {/*  */}
             {/*  */}
 
-            <span className="opacity-70 md:w-96 pb-3 flex gap-2 font-thin md:text-[34px] text-[26px]">
+            <span className="opacity-70 md:w-96 pb-3 flex gap-2 font-thin md:text-[28px] text-[26px]">
               &gt;
               <TypeAnimation
                 sequence={[
@@ -120,7 +121,8 @@ const Home = () => {
                   activeClass="active"
                   smooth={true}
                   spy={true}
-                  className="text-white hover:text-primary duration-500 cursor-pointer">
+                  className="text-white duration-500 cursor-pointer hover:text-primary"
+                >
                   About me
                 </Link>
               </button>
@@ -131,13 +133,13 @@ const Home = () => {
             </div>
           </div>
           {/* img */}
-          <div className="order-first md:order-last relative">
+          <div className="relative order-first md:order-last">
             <img src={img2} alt="" />
           </div>
         </div>
         {/*  */}
         {/* margquee item */}
-        <div className="md:flex border hidden w-full h-fit border-dashed border-teal-600 mt-5 p-1 items-center justify-center gap-3 ">
+        <div className="hidden gap-3 justify-center items-center p-1 mt-5 w-full border border-teal-600 border-dashed md:flex h-fit">
           <Marquee
             direction="left"
             pauseOnHover={true}
@@ -146,7 +148,8 @@ const Home = () => {
             speed={80}
             pauseOnClick={true}
             delay={0}
-            gradientColor={[255, 255, 255]}>
+            gradientColor={[255, 255, 255]}
+          >
             <MarqueeItem name="Java" img={java} />
             <MarqueeItem name="JavaScript" img={javascript} />
             <MarqueeItem name="React" img={rreact} />
@@ -164,7 +167,7 @@ const Home = () => {
       </div>
       <div className="h-24 bg-[##011627] w-full mx-auto absolute left-0 hidden md:block"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

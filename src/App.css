@@ -2,6 +2,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background: rgb(1, 22, 39);
+  font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    monospace;
 }
 
 .btn1 {
@@ -61,3 +63,9 @@ body {
   border-radius: 2em;
   background: #171f38;
 }
+
+
+.custom-shadow {
+  box-shadow: 10px 41px 82px rgba(1, 1, 26, 0.925); /* Red shadow with 50% opacity */
+}
+

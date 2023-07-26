@@ -1,7 +1,8 @@
-import React from "react"
-import Services from "./Services"
-import TagSphere from "./TagSphere"
-import { personalInfo } from "../data/personalInfo"
+import React from "react";
+import Services from "./Services";
+import TagSphere from "./TagSphere";
+import { personalInfo } from "../data/personalInfo";
+import { FormatQuoteOutlined, PersonPin } from "@mui/icons-material";
 
 const About = () => {
   const skills = [
@@ -25,29 +26,45 @@ const About = () => {
       image:
         "https://res.cloudinary.com/jamesmumo/image/upload/v1687262439/portfolioImages/comp_s2wytl.png",
     },
-  ]
+  ];
   const tags = [
     ...personalInfo.skillsTabsData.frameworksAndLibraries,
     ...personalInfo.skillsTabsData.languages,
     ...personalInfo.skillsTabsData.tools,
-  ]
+  ];
   return (
-    <div className="md:px-10 px-7 sm:-mt-24" id="about">
+    <div className="px-7 md:px-10 sm:-mt-24" id="about">
       {/*  */}
       <span className="flex items-center">
-        <hr className="border-t border-teal-400 mx-1 w-4" />
-        <span className="text-primary text-1xl md:text-3xl font-semibold">
-          About Me
+        <hr className="mx-1 w-4 border-t border-teal-400" />
+        <span className="font-semibold text-primary text-1xl md:text-3xl">
+          About
         </span>
-        <hr className="border-t border-teal-400 mx-1 flex-grow" />
+        <hr className="flex-grow mx-1 border-t border-teal-400" />
       </span>
-      {/* <h1 className="text-primary font-semibold text-3xl mt-5">About me:</h1> */}
+      {/* <h1 className="mt-5 text-3xl font-semibold text-primary">About me:</h1> */}
       <div className="flex flex-col md:flex-row">
-        <TagSphere tags={tags} width={300} height={320} />
+        <TagSphere tags={tags} width={400} height={420} />
         {/*  */}
-        <p className="my-3 text-white md:w-2/3 leading-[2] flex flex-col mx-3 justify-center">
-          <span>
+        <div className="my-3 text-white md:w-2/3 leading-[2] flex flex-col mx-3 justify-center">
+          <h6 className="markup ml-0 text-[15px] opacity-25 italic">
+            &lt;p&gt;
+          </h6>
+          <span className="flex items-center">
+            {/* <hr className="mx-3 w-10 border-t border-teal-400" /> */}
+            <span className="text-[#7fffd4] text-[15px] font-semibold">
+              About Me
+            </span>
+            <hr className="flex-grow mx-3 border-t border-teal-400" />
+          </span>
+          <span className="opacity-80">
             {" "}
+            <FormatQuoteOutlined
+              color="#7fffd4"
+              fontSize="large"
+              className="p-0 rotate-0 ml-1 mr-2 text-[#7fffd4]"
+              sx={{ rotate: "180deg" }}
+            />
             <span className="text-[#43b48e] font-semibold ">Hi,</span> my name
             is James, I am a passionate Developer with intrests in
             <span className=" text-[#43b48e] opacity-100">
@@ -56,8 +73,9 @@ const About = () => {
             </span>{" "}
             I have considerable experience with languages and frameworks such as{" "}
             <span className=" text-[#43b48e] opacity-100">
-              React, React-Native, NextJs, Vue.js, Node/Express.Js, Flutter,
-              Kotlin and Java
+              React, React-Native, NextJs, Vue.js, Node/Express.Js, Python,
+              Flask <span className="text-white">& </span>
+              Django
             </span>
             . I also have an Interest in{" "}
             <span className=" text-[#43b48e] opacity-100">
@@ -67,13 +85,21 @@ const About = () => {
             <span className=" text-[#43b48e] font-semibold text-[20px] opacity-100">
               Judgement Day is Coming😁
             </span> */}
-          </span>
-        </p>
+          <FormatQuoteOutlined
+            color="#7fffd4"
+            fontSize="large"
+            className="p-0  ml-2 mr-1 text-[#7fffd4]"
+            />
+            </span>{" "}
+          <h6 className="markup ml-0 text-[15px] opacity-25 italic">
+            &lt;/p&gt;
+          </h6>
+        </div>
       </div>
 
-      <div className="md:flex my-7 items-center">
-        <div className="text-primary text-8xl font-bold">3+</div>
-        <p className="text-white text-2xl md:ml-5">
+      <div className="items-center my-7 md:flex">
+        <div className="text-8xl font-bold text-primary">3+</div>
+        <p className="text-2xl text-white md:ml-5">
           Years of experience. Specialised in building apps, while ensuring a
           seamless experience for end users.
         </p>
@@ -81,23 +107,24 @@ const About = () => {
 
       {/* skills */}
       <span className="flex items-center">
-        <hr className="border-t border-teal-400 mx-1 w-4" />
-        <span className="text-primary text-1xl md:text-xl font-semibold">
+        <hr className="mx-1 w-4 border-t border-teal-400" />
+        <span className="font-semibold text-primary text-1xl md:text-xl">
           Skills
         </span>
-        <hr className="border-t border-teal-400 mx-1 flex-grow" />
+        <hr className="flex-grow mx-1 border-t border-teal-400" />
       </span>
-      <div className="flex flex-col md:flex-row ">
+      <div className="flex flex-col md:flex-row">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="md:w-[256px] md:h-[254px] hover:bg-[#04a776] flex flex-col items-baseline justify-end md:m-3 my-3 p-5 shadow-sm skills transition-all duration-500">
+            className="md:w-[256px] md:h-[254px] hover:bg-[#04a776] flex flex-col items-baseline justify-end md:m-3 my-3 p-5 shadow-sm skills transition-all duration-500"
+          >
             <img
               src={skill.image}
               alt={skill.name}
               className="w-[55px] h-[54px]"
             />
-            <p className="mt-3 text-2xl text-white font-semibold">
+            <p className="mt-3 text-2xl font-semibold text-white">
               {skill.name}
             </p>
           </div>
@@ -107,7 +134,7 @@ const About = () => {
       {/* services section */}
       {/* <Services /> */}
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
