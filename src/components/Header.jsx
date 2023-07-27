@@ -16,7 +16,7 @@ const Header = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-7xl text-opacity-50 shadow-md">
+    <div className="w-full max-w-7xl text-opacity-50 border shadow-md">
       <div className="justify-between items-center px-7 py-2 md:flex md:px-10">
         {/* logo section */}
         <div className="flex gap-1 items-center text-2xl font-bold cursor-pointer">

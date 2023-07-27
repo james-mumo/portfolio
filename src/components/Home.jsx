@@ -96,7 +96,7 @@ const Home = () => {
             {/*  */}
             {/*  */}
 
-            <span className="opacity-70 md:w-96 pb-3 flex gap-2 font-thin md:text-[28px] text-[26px]">
+            <span className="opacity-70 md:w-96 pb-3 flex gap-2 font-thin md:text-[28px] text-[20px]">
               &gt;
               <TypeAnimation
                 sequence={[
