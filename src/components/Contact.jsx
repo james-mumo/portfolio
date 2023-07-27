@@ -1,35 +1,35 @@
-import React from "react"
-import facebook from "../assets/socials/facebook.png"
-import instagram from "../assets/socials/instagram.png"
-import dribbble from "../assets/socials/dribbble.png"
-import email from "../assets/socials/sms.png"
-import { personalInfo } from "../data/personalInfo"
+import React from "react";
+import facebook from "../assets/socials/facebook.png";
+import instagram from "../assets/socials/instagram.png";
+import dribbble from "../assets/socials/dribbble.png";
+import email from "../assets/socials/sms.png";
+import { personalInfo } from "../data/personalInfo";
 import {
   AiFillLinkedin,
   AiOutlineGithub,
   AiOutlineMail,
   AiOutlineTwitter,
-} from "react-icons/ai"
+} from "react-icons/ai";
 
 const Contact = () => {
   const ConnectItem = ({ itemTitle, itemContent }) => {
     return (
       <span className="flex gap-2 items-center">
-        <span className=" bg-teal-600 border border-teal-500 p-1 rounded-md">
+        <span className="p-1 bg-teal-600 rounded-md border border-teal-500">
           <img src={itemTitle} alt="" srcset="" />
         </span>
         <span className="text-[#7fffd4] font-bold">{itemContent}</span>
       </span>
-    )
-  }
+    );
+  };
   return (
-    <div className="md:px-10 px-1 my-10" id="contact">
+    <div className="px-1 my-10 md:px-10" id="contact">
       <span className="flex items-center">
-        <hr className="border-t border-teal-400 mx-1 w-4" />
-        <span className="text-primary text-1xl md:text-3xl font-semibold">
+        <hr className="mx-1 w-4 border-t border-teal-400" />
+        <span className="font-semibold text-primary text-1xl md:text-3xl">
           Contact
         </span>
-        <hr className="border-t border-teal-400 mx-1 flex-grow" />
+        <hr className="flex-grow mx-1 border-t border-teal-400" />
       </span>
       <div className="flex flex-col md:flex-row">
         <span className="bg-[#01d29313] w-full flex flex-col">
@@ -38,14 +38,15 @@ const Contact = () => {
             opportunity💰
           </span>
 
-          <div className="bothCards flex md:flex-row flex-col w-full justify-between">
+          <div className="flex flex-col justify-between w-full bothCards md:flex-row">
             {/* contact cards */}
-            <div className="contactCards md:w-1/2 flex flex-col px-5 gap-3 my-3 items-start">
+            <div className="flex flex-col gap-3 items-start px-5 my-3 contactCards md:w-1/2">
               <a
                 href={personalInfo.linkedIn}
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-center flex-row items-center gap-2">
+                className="flex flex-row gap-2 justify-center items-center"
+              >
                 <AiFillLinkedin
                   style={{ color: "white", height: "30px", width: "30px" }}
                 />
@@ -55,7 +56,8 @@ const Contact = () => {
                 href={personalInfo.github}
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-center flex-row items-center gap-2">
+                className="flex flex-row gap-2 justify-center items-center"
+              >
                 <AiOutlineGithub
                   style={{ color: "white", height: "30px", width: "30px" }}
                 />
@@ -65,7 +67,8 @@ const Contact = () => {
                 href={personalInfo.twitter}
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-center flex-row items-center gap-2">
+                className="flex flex-row gap-2 justify-center items-center"
+              >
                 <AiOutlineTwitter
                   style={{ color: "white", height: "30px", width: "30px" }}
                 />
@@ -75,7 +78,8 @@ const Contact = () => {
                 href="mailto:mumojames98@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-center flex-row items-center gap-2">
+                className="flex flex-row gap-2 justify-center items-center"
+              >
                 <AiOutlineMail
                   style={{ color: "white", height: "30px", width: "30px" }}
                 />
@@ -104,8 +108,9 @@ const Contact = () => {
                   cols="54"
                   rows="3"
                   className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded mb-2"
-                  placeholder="Message:"></textarea>
-                <button className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-white hover:bg-white hover:text-primary block">
+                  placeholder="Message:"
+                ></textarea>
+                <button className="block px-12 py-2 text-white rounded transition-all duration-500 btn bg-primary hover:bg-white hover:text-primary">
                   Send
                 </button>
               </form>
@@ -113,8 +118,10 @@ const Contact = () => {
           </div>
         </span>
       </div>
-    </div>
-  )
-}
 
-export default Contact
+      <hr className="flex-grow mx-0 mt-3 border-t border-teal-400" />
+    </div>
+  );
+};
+
+export default Contact;

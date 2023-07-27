@@ -18,7 +18,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link, ScrollLink } from "react-scroll";
 
 const Home = () => {
-  const link = "about";
+  const link = "contact";
   const MarqueeItem = ({ name, img }) => {
     return (
       <div className="flex border  border-teal-500 p-1 object-contain bg-[#01d29313] items-center px-3 mx-4 gap-4 h-10 rounded-md">
@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div className="md:px-10 px-7 my-7 md:h-screen bg-[##011627]" id="home">
       <div>
-        <div className="flex flex-col justify-between items-center w-full md:flex-row">
+        <div className="flex flex-col justify-evenly items-center w-full md:flex-row">
           {/* image & content */}
           {/* text */}
           <div className="text-white">
@@ -123,7 +123,7 @@ const Home = () => {
                   spy={true}
                   className="text-white duration-500 cursor-pointer hover:text-primary"
                 >
-                  About me
+                  Contact me
                 </Link>
               </button>
 

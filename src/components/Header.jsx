@@ -20,7 +20,7 @@ const Header = () => {
       <div className="justify-between items-center px-7 py-2 md:flex md:px-10">
         {/* logo section */}
         <div className="flex gap-1 items-center text-2xl font-bold cursor-pointer">
-          <a href="/" className="pl-4">
+          <a href="/">
             <span className="flex overflow-hidden gap-2 items-center cursor-pointer">
               <img
                 src="./gitAvatar.png"
