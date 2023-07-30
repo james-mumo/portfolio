@@ -33,7 +33,7 @@ const About = () => {
     ...personalInfo.skillsTabsData.tools,
   ];
   return (
-    <div className="px-7 md:px-10 sm:-mt-24" id="about">
+    <div className="px-7 md:px-10 sm:-mt-24 rounded-md" id="about">
       {/*  */}
       <span className="flex items-center">
         <hr className="mx-1 w-4 border-t border-teal-400" />
@@ -43,7 +43,7 @@ const About = () => {
         <hr className="flex-grow mx-1 border-t border-teal-400" />
       </span>
       {/* <h1 className="mt-5 text-3xl font-semibold text-primary">About me:</h1> */}
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row p-1 bg-[#01d29313] ">
         <TagSphere tags={tags} width={400} height={420} />
         {/*  */}
         <div className="my-3 text-white md:w-2/3 leading-[2] flex flex-col mx-3 justify-center">

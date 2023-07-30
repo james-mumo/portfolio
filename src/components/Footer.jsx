@@ -1,14 +1,15 @@
-import React from "react"
-import { personalInfo } from "../data/personalInfo"
+import React from "react";
+import { personalInfo } from "../data/personalInfo";
 
 const Footer = () => {
   return (
     <div className="text-white opacity-50 flex flex-col md:flex-row justify-center items-center my-5">
       <p>
-        @ Copyright {new Date().getFullYear()} | {personalInfo.fullName}
+        Copyright {new Date().getFullYear()} |{" "}
+        <a href="/">{personalInfo.fullName}</a>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
