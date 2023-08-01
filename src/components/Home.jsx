@@ -128,7 +128,10 @@ const Home = () => {
               </button>
 
               <button className="border-[#009688] border text-teal-400  hover:border-teal-400  outline py-1.5 rounded border-none ml-5 px-5 text-md opacity-90 ">
-                <RouterLink to="/cv"> View CV</RouterLink>
+                <RouterLink to="/https://drive.google.com/file/d/1_jkDItGcuttilqhbT6z1vGCnsAcL1Wln/view?usp=drive_link">
+                  {" "}
+                  View CV
+                </RouterLink>
               </button>
             </div>
           </div>
