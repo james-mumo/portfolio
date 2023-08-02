@@ -57,6 +57,33 @@ const Projects = () => {
       seeCode: "https://github.com/james-mumo/dash-vuejs/tree/main",
       visitApp: "https://vuejsdash.vercel.app/",
     },
+    {
+      title: "Prestige Link - MERN",
+      description:
+        "This is a MERN web App of a Hardware Shop Called Prestige Link. It has cart, login and signup functionalities as well as Admin functionalities such as Adding New Products, Editing and Updating Existing Projects.",
+      photo:
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1690996037/Screenshot_from_2023-08-02_20-06-55_ct55zk.png",
+      seeCode: "https://github.com/james-mumo/mern-hardware-react",
+      visitApp: "https://mern-hardware-react.vercel.app/",
+    },
+    {
+      title: "NETFLIX Clone - React",
+      description:
+        'This is a netflix clone app in React which makes use of the "themoviedb" api. The api provides various endpoints for Latest, Top Rated, and Trending Movies as well as Sorting Movies By Genre.',
+      photo:
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1690998915/Screenshot_from_2023-08-02_20-54-48_fiwu3o.png",
+      seeCode: "https://github.com/james-mumo/netflix-clone",
+      visitApp: "https://james-netflix.vercel.app/",
+    },
+    {
+      title: "Gadgets-Store React",
+      description:
+        "This is a React Electronics Online Store that makes use of Firebase for Authentication and Real-Time Data Storage. The App also has various functionalities such as Search, Cart, Signup and Login.",
+      photo:
+        "https://res.cloudinary.com/djv535hkn/image/upload/v1691004155/Screenshot_from_2023-08-02_22-22-15_it7rju.png",
+      seeCode: "https://github.com/james-mumo/Gadget-Store-React",
+      visitApp: "https://gadget-store-react.vercel.app",
+    },
   ];
   return (
     <div className="md:px-10 px-7 my-10 mt-16" id="projects">
@@ -78,7 +105,7 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                className="my-6 flex flex-col shadow-sm md:w-[343px] bg-[##011627] p-4 rounded border border-emerald-400"
+                className="my-6 flex flex-col shadow-sm md:w-[343px] bg-[#011b27] p-4 rounded border border-emerald-400"
               >
                 <a
                   href={project.photo}
@@ -108,8 +135,14 @@ const Projects = () => {
             );
           })}
         </div>{" "}
+        <span className="flex items-center mt-3 w-full">
+          <hr className="border-t border-teal-400 mx-1 w-4" />
+          <button className="text-xl md:text-xl font-semibold border border-teal-400 p-1 rounded-md cursor-pointer transition-all duration-200 bg-primary text-white hover:bg-[#011b27] hover:text-primary">
+            View More
+          </button>
+          <hr className="border-t border-teal-400 mx-1 flex-grow" />
+        </span>
       </div>
-
       <hr className="flex-grow mx-0 mt-3 border-t border-teal-400" />
     </div>
   );
