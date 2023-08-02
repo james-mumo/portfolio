@@ -135,13 +135,13 @@ const Projects = () => {
             );
           })}
         </div>{" "}
-        <span className="flex items-center mt-3 w-full">
+{/*         <span className="flex items-center mt-3 w-full">
           <hr className="border-t border-teal-400 mx-1 w-4" />
           <button className="text-xl md:text-xl font-semibold border border-teal-400 p-1 rounded-md cursor-pointer transition-all duration-200 bg-primary text-white hover:bg-[#011b27] hover:text-primary">
             View More
           </button>
           <hr className="border-t border-teal-400 mx-1 flex-grow" />
-        </span>
+        </span> */}
       </div>
       <hr className="flex-grow mx-0 mt-3 border-t border-teal-400" />
     </div>
